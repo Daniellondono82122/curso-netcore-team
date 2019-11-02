@@ -11,9 +11,12 @@ namespace TGL.WebApp.Data
     {
 
         public DbSet<Student> Student { get; set; }
-        public TGLContext(DbContextOptions<TGLContext> options):base(options)
-        {
+        public DbSet<Computer> Computer { get; set; }
 
+        public TGLContext(DbContextOptions<TGLContext> options)
+            :base(options)
+        {
+            this.Database.EnsureCreated();
         }
     }
 }
