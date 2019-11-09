@@ -53,6 +53,13 @@ namespace TGL.WebApp.Controller
             return Ok();
         }
 
+        /// <summary>
+        /// Metodo para eliminar un estudiante por el identificador (id)
+        /// </summary>
+        /// <param name="id">Identificador del estudiante</param>
+        /// <returns>Retorna Ok si fue eliminado</returns>
+        /// 
+
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public IActionResult Delete(Guid id)
